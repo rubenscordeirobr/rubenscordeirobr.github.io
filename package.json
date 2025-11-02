@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "deploy": "npm run build && pwsh -Command \"Copy-Item 'out/*' '.' -Recurse -Force\"",
     "preview": "vite preview"
   },
   "dependencies": {

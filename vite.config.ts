@@ -66,9 +66,11 @@ export default defineConfig({
     }),
   ],
   base,
+  root: 'src',
   build: {
     sourcemap: true,
-    outDir: 'out',
+    outDir: '../out',
+    emptyOutDir: true,
   },
   resolve: {
     alias: {
